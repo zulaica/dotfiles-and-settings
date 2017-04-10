@@ -1,4 +1,11 @@
+###
+# Ignore
+###
 *
+
+###
+# Include
+###
 !.gitignore
 !~/Library/Application\ Support/Code/User/settings.json
 !~/Documents/gists/handy_ember_nombom/*
