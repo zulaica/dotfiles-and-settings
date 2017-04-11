@@ -10,6 +10,7 @@
   "editor.minimap.renderCharacters": false,
   "editor.rulers": [80],
   "editor.tabSize": 2,
+  "eslint.run": "onSave",
   "terminal.integrated.lineHeight": 1.5,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "workbench.colorTheme": "Default High Contrast",
