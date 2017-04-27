@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.cursorStyle": "block",
+  "editor.cursorStyle": "line",
   "editor.fontSize": 13,
   "editor.fontFamily": "'Fira Code', 'Input Mono', monospace",
   "editor.fontLigatures": true,
@@ -11,6 +11,7 @@
   "editor.rulers": [80],
   "editor.tabSize": 2,
   "eslint.run": "onSave",
+  "files.insertFinalNewline": true,
   "terminal.integrated.lineHeight": 1.5,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "workbench.colorTheme": "Default High Contrast",
