@@ -15,6 +15,7 @@
   "terminal.integrated.lineHeight": 1.5,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
+  "window.nativeTabs": true,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "workbench.colorTheme": "Default High Contrast",
   "workbench.iconTheme": "vs-seti"
