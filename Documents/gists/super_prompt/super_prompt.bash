@@ -32,8 +32,8 @@ C_RUBY="\x1B[91m"        # Light Red
 C_NODE="\x1B[38;5;34m"   # Dark Green
 
 DIVIDER="$C_DIVIDER : $C_DEFAULT"
-HORIZONTAL_RULE="$C_DIVIDER
-\r╠══════════════════════════════════════════════════════════════════════════════╣
+HORIZONTAL_RULE="$C_DIVIDER\n
+\r╠══════════════════════════════════════════════════════════════════════════════╣\n
 $C_DEFAULT"
 
 ###
