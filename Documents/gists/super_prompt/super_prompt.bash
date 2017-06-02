@@ -32,6 +32,9 @@ C_RUBY="\x1B[91m"        # Light Red
 C_NODE="\x1B[38;5;34m"   # Dark Green
 
 DIVIDER="$C_DIVIDER : $C_DEFAULT"
+HORIZONTAL_RULE="$C_DIVIDER
+████████████████████████████████████████████████████████████████████████████████
+$C_DEFAULT"
 
 ###
 # Functions
@@ -90,7 +93,8 @@ currentEmber() {
 ###
 # Output
 ###
-PS1="📂  \W
+PS1="$(echo -e $HORIZONTAL_RULE)
+📂  \W
 \$(currentGitBranch)\$(currentRubyAndGemset)\$(currentRails)\$(currentEmber)\$(currentNode)
 💰  "
 
