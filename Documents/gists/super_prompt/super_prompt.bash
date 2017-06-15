@@ -2,8 +2,8 @@
 # Super Prompt
 #
 # Output:
-# 📂 WORKING_DIRECTORY
-# 🌱 GIT_BRANCH : 💎 RUBY_VERSION-pPATCH@GEMSET : 🛤 RAILS_VERSION : 🐹 EMBER_VERSION : 💠 NODE_VERSION
+# 📂 WORKING_DIRECTORY : 🌱 GIT_BRANCH
+# 💎 RUBY_VERSION-pPATCH@GEMSET : 🛤 RAILS_VERSION : 🐹 EMBER_VERSION : 💠 NODE_VERSION
 # 💰
 #
 # WTF:
@@ -52,7 +52,7 @@ currentGitBranch() {
   [ "$CURRENT_BRANCH" != "" ] && CURRENT_BRANCH="🌱  $CURRENT_BRANCH"
   if [ "$CURRENT_BRANCH" != "" ]
   then
-    echo -e "$C_GIT_STATUS$CURRENT_BRANCH$DIVIDER"
+    echo -e "$DIVIDER$C_GIT_STATUS$CURRENT_BRANCH"
   fi
 }
 
@@ -94,8 +94,8 @@ currentEmber() {
 # Output
 ###
 PS1="$(echo -e $HORIZONTAL_RULE)
-📂  \W
-\$(currentGitBranch)\$(currentRubyAndGemset)\$(currentRails)\$(currentEmber)\$(currentNode)
+📂  \W\$(currentGitBranch)
+\$(currentRubyAndGemset)\$(currentRails)\$(currentEmber)\$(currentNode)
 💰  "
 
 export PS1
