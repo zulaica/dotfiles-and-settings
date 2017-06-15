@@ -17,6 +17,6 @@
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
-  "workbench.colorTheme": "Default High Contrast",
+  "workbench.colorTheme": "Monokai",
   "workbench.iconTheme": "vs-seti"
 }
