@@ -4,7 +4,7 @@
   "editor.fontSize": 13,
   "editor.fontFamily": "'Fira Code', 'Input Mono', monospace",
   "editor.fontLigatures": true,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "boundary",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 80,
   "editor.minimap.renderCharacters": false,
