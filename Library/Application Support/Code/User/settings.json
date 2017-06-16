@@ -18,5 +18,9 @@
   "window.nativeTabs": true,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "workbench.colorTheme": "Monokai",
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#666",
+    "editorWhitespace.foreground": "#666"
+  },
   "workbench.iconTheme": "vs-seti"
 }
