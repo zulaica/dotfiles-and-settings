@@ -13,6 +13,7 @@
   "eslint.run": "onSave",
   "files.insertFinalNewline": true,
   "terminal.integrated.lineHeight": 1.5,
+  "tslint.run": "onSave",
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
