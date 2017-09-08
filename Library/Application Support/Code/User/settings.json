@@ -9,6 +9,7 @@
   "editor.minimap.maxColumn": 80,
   "editor.minimap.renderCharacters": false,
   "editor.rulers": [80],
+  "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "eslint.run": "onSave",
   "files.insertFinalNewline": true,
