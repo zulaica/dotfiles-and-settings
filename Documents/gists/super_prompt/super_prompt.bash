@@ -13,7 +13,7 @@
 # 4. RUBY_VERSION displays in light red.
 # 5. Ruby PATCH number and GEMSET display only if they are not the default.
 # 6. RAILS_VERSION displays in light grey, if installed.
-# 7. EMBER_VERSION displays in orange.
+# 7. EMBER_VERSION displays in orange, if installed.
 # 8. NODE_VERSION displays in dark green.
 # 9. 💰 is your prompt
 #
@@ -86,8 +86,12 @@ currentNode() {
 }
 
 currentEmber() {
-  EMBER=$(ember version | awk -F'ember-cli: ' '{ print $2 }')
-  echo -e "🐹  $C_EMBER$EMBER$DIVIDER"
+  $(type ember > /dev/null 2> /dev/null)
+  if [ $? == 0 ]
+  then
+    EMBER=$(ember version | awk -F'ember-cli: ' '{ print $2 }')
+    echo -e "🐹  $C_EMBER$EMBER$DIVIDER"
+  fi
 }
 
 ###
