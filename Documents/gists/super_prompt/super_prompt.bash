@@ -3,7 +3,7 @@
 #
 # Output:
 # 📂 WORKING_DIRECTORY : 🌱 GIT_BRANCH
-# 💎 RUBY_VERSION-pPATCH@GEMSET : 🛤 RAILS_VERSION : 🐹 EMBER_VERSION : 💠 NODE_VERSION
+# 💎 RUBY_VERSION-pPATCH@GEMSET : 🛤 RAILS_VERSION : 🐹 EMBER_VERSION : ☑️️ TYPESCRIPT_VERSION : 💠 NODE_VERSION
 # 💰
 #
 # WTF:
@@ -14,8 +14,9 @@
 # 5. Ruby PATCH number and GEMSET display only if they are not the default.
 # 6. RAILS_VERSION displays in light grey, if installed.
 # 7. EMBER_VERSION displays in orange, if installed.
-# 8. NODE_VERSION displays in dark green.
-# 9. 💰 is your prompt
+# 8. TYPESCRIPT_VERSION displays in cobalt blue, if installed.
+# 9. NODE_VERSION displays in dark green.
+# 10. 💰 is your prompt
 #
 ###
 
@@ -23,13 +24,14 @@
 # Formatting
 ###
 C_DEFAULT="\x1B[00m"
-C_DIVIDER="\x1B[90m"     # Dark Grey
-C_EMBER="\x1B[38;5;214m" # Orange
-C_GIT_CLEAN="\x1B[92m"   # Light Green
-C_GIT_DIRTY="\x1B[93m"   # Light Yellow
-C_RAILS="\x1B[37m"       # Light Grey
-C_RUBY="\x1B[91m"        # Light Red
-C_NODE="\x1B[38;5;34m"   # Dark Green
+C_DIVIDER="\x1B[90m"         # Dark Grey
+C_EMBER="\x1B[38;5;214m"     # Orange
+C_GIT_CLEAN="\x1B[92m"       # Light Green
+C_GIT_DIRTY="\x1B[93m"       # Light Yellow
+C_RAILS="\x1B[37m"           # Light Grey
+C_RUBY="\x1B[91m"            # Light Red
+C_TYPESCRIPT="\x1B[38;5;32m" # Cobalt Blue
+C_NODE="\x1B[38;5;34m"       # Dark Green
 
 DIVIDER="$C_DIVIDER : $C_DEFAULT"
 HORIZONTAL_RULE="$C_DIVIDER\n
@@ -94,12 +96,21 @@ currentEmber() {
   fi
 }
 
+currentTypeScript() {
+  $(type tsc > /dev/null 2> /dev/null)
+  if [ $? == 0 ]
+  then
+    TYPESCRIPT=$(tsc -v | awk -F'Version ' '{ print $2 }')
+    echo -e "☑️️  $C_TYPESCRIPT$TYPESCRIPT$DIVIDER"
+  fi
+}
+
 ###
 # Output
 ###
 PS1="$(echo -e $HORIZONTAL_RULE)
 📂  \W\$(currentGitBranch)
-\$(currentRubyAndGemset)\$(currentRails)\$(currentEmber)\$(currentNode)
+\$(currentRubyAndGemset)\$(currentRails)\$(currentEmber)\$(currentTypeScript)\$(currentNode)
 💰  "
 
 export PS1
