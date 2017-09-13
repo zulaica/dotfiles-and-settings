@@ -15,8 +15,9 @@
 # 6. RAILS_VERSION displays in light grey, if installed.
 # 7. EMBER_VERSION displays in orange, if installed.
 # 8. TYPESCRIPT_VERSION displays in cobalt blue, if installed.
-# 9. NODE_VERSION displays in dark green.
-# 10. 💰 is your prompt
+# 9. TYPESCRIPT_VERSION displays workspace version if different than global.
+# 10. NODE_VERSION displays in dark green.
+# 11. 💰 is your prompt
 #
 ###
 
@@ -100,7 +101,13 @@ currentTypeScript() {
   $(type tsc > /dev/null 2> /dev/null)
   if [ $? == 0 ]
   then
-    TYPESCRIPT=$(tsc -v | awk -F'Version ' '{ print $2 }')
+    if [ -f .vscode/settings.json ]
+    then
+      TYPESCRIPT=$(node_modules/typescript/bin/tsc -v | awk -F'Version ' '{ print $2 }')
+    else
+      TYPESCRIPT=$(tsc -v | awk -F'Version ' '{ print $2 }')
+    fi
+
     echo -e "☑️️  $C_TYPESCRIPT$TYPESCRIPT$DIVIDER"
   fi
 }
