@@ -28,5 +28,5 @@
     "editorWhitespace.foreground": "#555"
   },
   "workbench.iconTheme": "vs-seti",
-  "workbench.panel.location": "right",
+  "workbench.panel.defaultLocation": "right"
 }
