@@ -14,6 +14,15 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+  "emmet.syntaxProfiles": {
+    "html": {
+      "attr_quotes": "single"
+    },
+    "jsx": {
+      "attr_quotes": "single",
+      "self_closing_tag": true
+    }
+  },
   "eslint.run": "onSave",
   "files.insertFinalNewline": true,
   "terminal.integrated.lineHeight": 1.5,
