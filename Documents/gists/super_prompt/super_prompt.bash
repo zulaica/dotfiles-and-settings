@@ -84,8 +84,11 @@ currentRails() {
 }
 
 currentNode() {
-  NODE=$(node --version)
-  echo -e "💠  $C_NODE$NODE$C_DEFAULT"
+  if which node &> /dev/null
+  then
+    NODE=$(node --version)
+    echo -e "💠  $C_NODE$NODE$C_DEFAULT"
+  fi
 }
 
 currentEmber() {
