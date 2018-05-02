@@ -25,6 +25,9 @@
   },
   "eslint.run": "onSave",
   "files.insertFinalNewline": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
   "terminal.integrated.lineHeight": 1.5,
   "tslint.run": "onSave",
   "typescript.implementationsCodeLens.enabled": true,
