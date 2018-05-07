@@ -28,6 +28,7 @@
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
+  "npm.enableScriptExplorer": true,
   "terminal.integrated.lineHeight": 1.5,
   "tslint.run": "onSave",
   "typescript.implementationsCodeLens.enabled": true,
