@@ -37,7 +37,9 @@
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.colorCustomizations": {
+    "editorGroup.border": "#333",
     "editorLineNumber.foreground": "#555",
+    "editorRuler.foreground": "#555",
     "editorWhitespace.foreground": "#555"
   },
   "workbench.iconTheme": "eq-material-theme-icons",
