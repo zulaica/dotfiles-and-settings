@@ -17,7 +17,7 @@ module.exports = {
     lineHeight: 1.5,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(255,255,255,0.8)',
+    cursorColor: 'rgba(185,235,142,0.8)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -29,7 +29,7 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: 'rgba(0,0,0,0.66)',
+    backgroundColor: 'rgba(33,33,33,0.66)',
 
     selectionColor: 'rgba(204,204,204,0.33)',
 
@@ -37,7 +37,7 @@ module.exports = {
     borderColor: 'green',
 
     // custom css to embed in the main window
-    css: '.splitpane_divider { background-color: rgba(51,255,0,0.2) !important }',
+    css: '.splitpane_divider { background-color: rgba(185,235,142,0.2) !important }',
 
     // custom css to embed in the terminal window
     termCSS: '',
