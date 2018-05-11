@@ -37,7 +37,11 @@ module.exports = {
     borderColor: 'green',
 
     // custom css to embed in the main window
-    css: '.splitpane_divider { background-color: rgba(185,235,142,0.2) !important }',
+    css: `
+    .splitpane_divider {
+      background-color: rgba(185,235,142,0.2) !important
+    }
+    `,
 
     // custom css to embed in the terminal window
     termCSS: '',
