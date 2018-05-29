@@ -4,11 +4,15 @@
   "editor.fontSize": 13,
   "editor.fontFamily": "'Fira Code', 'Input Mono', monospace",
   "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
   "editor.renderWhitespace": "boundary",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 80,
   "editor.minimap.renderCharacters": false,
-  "editor.rulers": [80],
+  "editor.renderControlCharacters": true,
+  "editor.rulers": [
+    80
+  ],
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
@@ -28,6 +32,7 @@
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
+  "gitlens.historyExplorer.enabled": true,
   "npm.enableScriptExplorer": true,
   "terminal.integrated.lineHeight": 1.5,
   "tslint.run": "onSave",
@@ -35,13 +40,8 @@
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
-  "workbench.colorCustomizations": {
-    "editorGroup.border": "#333",
-    "editorLineNumber.foreground": "#555",
-    "editorRuler.foreground": "#555",
-    "editorWhitespace.foreground": "#555"
-  },
+  "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.panel.defaultLocation": "right"
+  "workbench.panel.defaultLocation": "right",
+  "window.zoomLevel": 0,
 }
