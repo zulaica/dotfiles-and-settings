@@ -41,7 +41,7 @@
   "window.nativeTabs": true,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "workbench.colorTheme": "Night Owl",
-  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.iconTheme": "eq-material-theme-icons-light",
   "workbench.panel.defaultLocation": "right",
   "window.zoomLevel": 0,
 }
