@@ -40,8 +40,11 @@
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
+  "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": "eq-material-theme-icons-light",
   "workbench.panel.defaultLocation": "right",
-  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": true,
+  "window.zoomLevel": 0
 }
