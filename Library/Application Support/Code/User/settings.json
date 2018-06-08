@@ -2,7 +2,7 @@
 {
   "editor.cursorStyle": "line",
   "editor.fontSize": 13,
-  "editor.fontFamily": "'Fira Code', 'Input Mono', monospace",
+  "editor.fontFamily": "'Dank Mono'",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "boundary",

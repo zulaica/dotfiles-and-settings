@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 13,
 
     // font family with optional fallbacks
-    fontFamily: '"Fira Code", "Input Mono", monospace',
+    fontFamily: '"Dank Mono"',
 
     lineHeight: 1.5,
 
