@@ -34,6 +34,7 @@
   },
   "gitlens.historyExplorer.enabled": true,
   "npm.enableScriptExplorer": true,
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.lineHeight": 1.5,
   "tslint.run": "onSave",
   "typescript.implementationsCodeLens.enabled": true,
@@ -46,5 +47,5 @@
   "workbench.panel.defaultLocation": "right",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
 }
