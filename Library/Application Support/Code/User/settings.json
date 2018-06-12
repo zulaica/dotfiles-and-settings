@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.cursorStyle": "line",
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.fontFamily": "'Dank Mono'",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
@@ -34,7 +34,7 @@
   },
   "gitlens.historyExplorer.enabled": true,
   "npm.enableScriptExplorer": true,
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.5,
   "tslint.run": "onSave",
   "typescript.implementationsCodeLens.enabled": true,
