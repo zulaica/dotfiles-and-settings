@@ -104,7 +104,7 @@ currentTypeScript() {
   $(type tsc > /dev/null 2> /dev/null)
   if [ $? == 0 ]
   then
-    if [ -f .vscode/settings.json ]
+    if [ -f node_modules/typescript ]
     then
       TYPESCRIPT=$(node_modules/typescript/bin/tsc -v | awk -F'Version ' '{ print $2 }')
     else
