@@ -41,6 +41,9 @@ module.exports = {
     .splitpane_divider {
       background-color: rgba(185,235,142,0.2) !important
     }
+    .terms_terms .term_fit:not(.term_term):not(.term_wrapper):not(.term_active) {
+      opacity: 0.4;
+    }
     `,
 
     // custom css to embed in the terminal window
