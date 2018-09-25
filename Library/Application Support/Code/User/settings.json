@@ -1,5 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
+  "bracketPairColorizer.consecutivePairColors": [
+    ["<", "</"],
+    ["<", "/>"],
+    ["Gold", "Orchid", "LightSkyBlue"],
+    "Red"
+  ],
   "editor.cursorStyle": "line",
   "editor.fontSize": 14,
   "editor.fontFamily": "'Dank Mono'",
@@ -10,9 +16,7 @@
   "editor.minimap.maxColumn": 80,
   "editor.minimap.renderCharacters": false,
   "editor.renderControlCharacters": true,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
@@ -34,18 +38,21 @@
   },
   "gitlens.historyExplorer.enabled": true,
   "npm.enableScriptExplorer": true,
+  "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.5,
   "tslint.run": "onSave",
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
-  "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
-  "workbench.activityBar.visible": false,
+  "window.title":
+    "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
+  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": "eq-material-theme-icons-light",
   "workbench.panel.defaultLocation": "right",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
   "window.zoomLevel": 0,
+  "explorer.confirmDragAndDrop": false
 }
