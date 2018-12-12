@@ -54,5 +54,8 @@
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
   "window.zoomLevel": 0,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true
 }
