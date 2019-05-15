@@ -46,9 +46,9 @@
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
   "window.title":
-    "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
+    "${dirty}${separator}${rootName}${separator}${activeEditorLong}",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "New Moon",
   "workbench.iconTheme": "eq-material-theme-icons-light",
   "workbench.panel.defaultLocation": "right",
   "workbench.sideBar.location": "right",
@@ -57,5 +57,6 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.highlightModifiedTabs": true,
   "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true
+  "gitlens.views.lineHistory.enabled": true,
+  "terminal.integrated.rendererType": "dom"
 }
