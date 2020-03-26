@@ -45,8 +45,7 @@
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
-  "window.title":
-    "${dirty}${separator}${rootName}${separator}${activeEditorLong}",
+  "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorLong}",
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "New Moon",
   "workbench.iconTheme": "eq-material-theme-icons-light",
@@ -58,5 +57,21 @@
   "workbench.editor.highlightModifiedTabs": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "terminal.integrated.rendererType": "dom"
+  "terminal.integrated.rendererType": "dom",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.tree.renderIndentGuides": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
