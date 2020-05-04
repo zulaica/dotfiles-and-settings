@@ -51,7 +51,7 @@ currentGitBranch() {
     C_GIT_STATUS=${C_GIT_DIRTY}
   fi
 
-  CURRENT_BRANCH=$(git branch 2> /dev/null | awk -F'^* ' '{printf $2}')
+  CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
   [ "$CURRENT_BRANCH" != "" ] && CURRENT_BRANCH="🌱  $CURRENT_BRANCH"
   if [ "$CURRENT_BRANCH" != "" ]
   then
