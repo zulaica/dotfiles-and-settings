@@ -16,8 +16,8 @@ zle -N clear-screen
 # Formatted strings
 ###
 DIRECTORY="%F{109}📁 %(3~|…/%2~|%~)%f"
-DATE="%F{240}%D{%A %Y/%m/%d} 📆%f"
-TIME="%F{240}%T%f 🕒"
+DATE="%F{242}%D{%A %Y/%m/%d} 📆%f"
+TIME="%F{242}%T%f 🕒"
 
 ###
 # Functions
