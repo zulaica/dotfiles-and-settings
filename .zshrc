@@ -62,13 +62,13 @@ function print-info() {
     COLUMNS - $(string-length $1) - $(string-length $2) -1
   ))
 
-  if ((PADDING_LENGTH < 1))
+  if ((PADDING_LENGTH > 0))
     then
-      # Display minimal info if there aren't enought columns
-      echo -e ${1}
-    else
       local PADDING=${(pl.$PADDING_LENGTH.. .)}
       echo -e ${1}${PADDING}${2}
+    else
+      # Limit display to minimal info if there aren't enought columns
+      echo -e ${1}
   fi
 }
 
