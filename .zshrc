@@ -56,13 +56,29 @@ function string-length() {
   echo $x
 }
 
+# https://gist.github.com/romkatv/2a107ef9314f0d5f76563725b42f7cab#file-two-line-prompt-zsh-L67
+function print-info() {
+  local PADDING_LENGTH=$((
+    COLUMNS - $(string-length $1) - $(string-length $2) -1
+  ))
+
+  if ((PADDING_LENGTH < 1))
+    then
+      # Display minimal info if there aren't enought columns
+      echo -e ${1}
+    else
+      local PADDING=${(pl.$PADDING_LENGTH.. .)}
+      echo -e ${1}${PADDING}${2}
+  fi
+}
+
 ###
 # Output
 ###
 precmd() {
   local LEFT_INFO=' '${DIRECTORY}' '$(git-branch)
   local RIGHT_INFO=${DATE}
-  print -rP ${LEFT_INFO}${RIGHT_INFO}
+  print -rP "$(print-info "$LEFT_INFO" "$RIGHT_INFO")"
 }
 export PROMPT='❯ '
 export RPROMPT=${TIME}
