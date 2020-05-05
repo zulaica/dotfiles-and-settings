@@ -15,7 +15,7 @@ zle -N clear-screen
 ###
 # Formatted zsh expansions
 ###
-DIRECTORY="%F{109}📁 %~ %f"
+DIRECTORY="%F{109}📁 %(3~|…/%2~|%~) %f"
 DATE="%F{240}%D{%A %Y/%m/%d} 📆%f"
 TIME="%F{240}%T%f 🕒"
 
