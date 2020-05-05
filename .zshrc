@@ -24,6 +24,7 @@ TIME="%F{240}%T%f 🕒"
 ###
 function git-branch() {
   local BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
+
   if [ $? -eq 0 ]
     then
       local GIT_STATUS="$(git status --porcelain 2> /dev/null)"
@@ -83,12 +84,4 @@ precmd() {
 export PROMPT='❯ '
 export RPROMPT=${TIME}
 
-###
-# Enable Git tab completion
-# https://github.com/git/git/tree/master/contrib/completion
-###
-# fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
