@@ -23,11 +23,11 @@ TIME="%F{240}%T%f 🕒"
 # Functions
 ###
 function git-branch() {
-  BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
+  local BRANCH_NAME="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
   if [ $? -eq 0 ]
     then
-      GIT_STATUS="$(git status --porcelain 2> /dev/null)"
-      COLOR=%${#GIT_STATUS}(l.'34'.'178')
+      local GIT_STATUS="$(git status --porcelain 2> /dev/null)"
+      local COLOR=%${#GIT_STATUS}(l.'34'.'178')
       echo -e "%F{$COLOR}🌱 ${BRANCH_NAME}%f"
   fi
 }
