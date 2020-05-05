@@ -13,9 +13,9 @@ zle -N clear-screen
 ###
 
 ###
-# Formatted zsh expansions
+# Formatted strings
 ###
-DIRECTORY="%F{109}📁 %(3~|…/%2~|%~) %f"
+DIRECTORY="%F{109}📁 %(3~|…/%2~|%~)%f"
 DATE="%F{240}%D{%A %Y/%m/%d} 📆%f"
 TIME="%F{240}%T%f 🕒"
 
@@ -28,17 +28,14 @@ function git-branch() {
     then
       GIT_STATUS="$(git status --porcelain 2> /dev/null)"
       COLOR=%${#GIT_STATUS}(l.'34'.'178')
-      echo -e "%F{$COLOR}🌱 ${BRANCH_NAME} %f"
+      echo -e "%F{$COLOR}🌱 ${BRANCH_NAME}%f"
   fi
 }
 
 ###
 # Output
 ###
-precmd() { 
-  # echo -e ''
-  print -rP ' '${DIRECTORY}$(git-branch)${DATE}
-  }
+precmd() print -rP ' '${DIRECTORY}' '$(git-branch)' '${DATE}
 export PROMPT='❯ '
 export RPROMPT=${TIME}
 
