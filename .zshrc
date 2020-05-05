@@ -35,7 +35,11 @@ function git-branch() {
 ###
 # Output
 ###
-precmd() print -rP ' '${DIRECTORY}' '$(git-branch)' '${DATE}
+precmd() {
+  local LEFT_INFO=' '${DIRECTORY}' '$(git-branch)
+  local RIGHT_INFO=${DATE}
+  print -rP ${LEFT_INFO}${RIGHT_INFO}
+}
 export PROMPT='❯ '
 export RPROMPT=${TIME}
 
