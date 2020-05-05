@@ -32,6 +32,30 @@ function git-branch() {
   fi
 }
 
+# Determining the length of a string is /not/ trivial.
+# https://gist.github.com/romkatv/2a107ef9314f0d5f76563725b42f7cab#file-two-line-prompt-zsh-L45
+function string-length() {
+  local COLUMNS=${2:-$COLUMNS}
+  local -i x y=$#1 m
+
+  if (( y ))
+    then
+      while (( ${${(%):-$1%$y(l.1.0)}[-1]} ))
+        do
+          x=y
+          (( y *= 2 ));
+      done
+      local xy
+      while (( y > x + 1 ))
+        do
+          m=$(( x + (y - x) / 2 ))
+          typeset ${${(%):-$1%$m(l.x.y)}[-1]}=$m
+      done
+  fi
+
+  echo $x
+}
+
 ###
 # Output
 ###
