@@ -5,6 +5,11 @@ clear-screen() { echoti clear; precmd; zle redisplay; }
 zle -N clear-screen
 
 ###
+# Aliases
+###
+alias list='ls -ahlvFGO'
+
+###
 # Custom Prompt (WIP)
 #
 # Output:
