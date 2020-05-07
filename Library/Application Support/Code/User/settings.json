@@ -19,10 +19,6 @@
   "editor.tabSize": 2,
   "eslint.run": "onSave",
   "files.insertFinalNewline": true,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.historyExplorer.enabled": true,
   "npm.enableScriptExplorer": true,
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
