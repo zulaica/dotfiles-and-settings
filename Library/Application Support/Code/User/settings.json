@@ -7,41 +7,45 @@
     "Red"
   ],
   "editor.cursorStyle": "line",
-  "editor.fontSize": 13,
   "editor.fontFamily": "'Dank Mono'",
   "editor.fontLigatures": true,
+  "editor.fontSize": 13,
   "editor.formatOnSave": true,
-  "editor.renderWhitespace": "boundary",
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "boundary",
   "editor.rulers": [80],
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "eslint.run": "onSave",
+  "explorer.confirmDragAndDrop": false,
   "files.insertFinalNewline": true,
   "npm.enableScriptExplorer": true,
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.rendererType": "dom",
   "tslint.run": "onSave",
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorLong}",
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "New Moon",
+  "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.panel.defaultLocation": "right",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
-  "window.zoomLevel": 0,
-  "explorer.confirmDragAndDrop": false,
-  "workbench.editor.highlightModifiedTabs": true,
-  "terminal.integrated.rendererType": "dom",
+  "workbench.tree.renderIndentGuides": "always",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[html]": {
+  "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
@@ -49,9 +53,5 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "workbench.tree.renderIndentGuides": "always",
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
