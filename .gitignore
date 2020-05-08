@@ -8,7 +8,6 @@
 ###
 !.gitignore
 !.git-completion.bash
-!.hyper.js
 !~/Library/Application\ Support/Code/User/settings.json
 !~/Documents/gists/handy_ember_nombom/*
 !~/Documents/gists/super_prompt/*
