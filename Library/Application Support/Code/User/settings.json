@@ -30,7 +30,7 @@
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorLong}",
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "New Moon",
-  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.panel.defaultLocation": "right",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
