@@ -14,5 +14,5 @@ My dotfiles and settings, relative to my user directory. YMMV
 ```
 git init .
 git remote add origin <repository-url>
-git pull origin master
+git pull origin base
 ```
