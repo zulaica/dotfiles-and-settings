@@ -13,7 +13,7 @@ alias list='ls -ahlvFGO'
 # Custom Prompt (WIP)
 #
 # Output:
-#  📁 DIRECTORY 🌱 git-branch                                         DATE 📆
+# 📁 DIRECTORY 🌱 git-branch                                         DATE 📆
 # ❯                                                                     TIME 🕒
 ###
 
@@ -81,7 +81,7 @@ function print-info() {
 # Output
 ###
 precmd() {
-  local LEFT_INFO=' '${DIRECTORY}' '$(git-branch)
+  local LEFT_INFO=${DIRECTORY}' '$(git-branch)
   local RIGHT_INFO=${DATE}
   print -rP "$(print-info "$LEFT_INFO" "$RIGHT_INFO")"
 }
