@@ -29,7 +29,7 @@
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
-  "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorLong}",
+  "window.title": "${dirty} ❯ 📂  ${folderPath}${separator}${activeEditorShort}",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "New Moon",
@@ -53,5 +53,7 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "window.titleSeparator": " ❯ 📄 ",
+  "window.titleBarStyle": "native"
 }
