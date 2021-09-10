@@ -1,21 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "bracketPairColorizer.consecutivePairColors": [
-    [
-      "<",
-      "</"
-    ],
-    [
-      "<",
-      "/>"
-    ],
-    [
-      "Gold",
-      "Orchid",
-      "LightSkyBlue"
-    ],
-    "Red"
-  ],
+  "editor.bracketPairColorization.enabled": true,
   "editor.cursorStyle": "line",
   "editor.fontFamily": "'Dank Mono'",
   "editor.fontLigatures": true,
