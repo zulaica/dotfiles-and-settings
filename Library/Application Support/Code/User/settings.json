@@ -15,6 +15,7 @@
   "eslint.run": "onSave",
   "explorer.confirmDragAndDrop": false,
   "files.insertFinalNewline": true,
+  "phpSniffer.autoDetect": true,
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.5,
@@ -44,6 +45,9 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "wongjn.php-sniffer"
   },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
