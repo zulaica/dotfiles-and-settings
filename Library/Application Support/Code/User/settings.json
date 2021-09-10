@@ -20,8 +20,6 @@
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.5,
-  "terminal.integrated.rendererType": "dom",
-  "tslint.run": "onSave",
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "window.nativeTabs": true,
