@@ -31,6 +31,7 @@
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "New Moon",
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.enableExperiments": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.panel.defaultLocation": "right",
   "workbench.settings.enableNaturalLanguageSearch": false,
