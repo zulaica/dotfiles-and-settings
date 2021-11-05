@@ -123,3 +123,6 @@ load-nvmrc
 
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
+
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
