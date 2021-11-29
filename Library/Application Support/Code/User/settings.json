@@ -6,6 +6,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "boundary",
