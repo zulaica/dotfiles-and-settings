@@ -9,3 +9,4 @@
 !.gitignore
 !~/Library/Application\ Support/Code/User/settings.json
 !.zshrc
+!.macos_preferences
