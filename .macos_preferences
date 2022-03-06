@@ -41,6 +41,10 @@ echo "🧑‍💻 Updating Finder"
 defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
 # File extension visibility
 defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
+# Sidebar icon/font size
+defaults write NSGlobalDomain "NSTableViewDefaultSizeMode" -int 2
+# Sidebar tags visibility
+defaults write com.apple.finder "ShowRecentTags" -bool "false"
 # Path bar visibility
 defaults write com.apple.finder "ShowPathbar" -bool "true"
 # Status bar visibility
