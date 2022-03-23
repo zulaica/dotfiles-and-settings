@@ -29,7 +29,7 @@ defaults write com.apple.dock "autohide-delay" -float "0"
 # Clear default persistent apps
 defaults write com.apple.dock "persistent-apps" -array
 # Inactive Applications visibility
-defaults write com.apple.dock "static-only" -bool "true"
+defaults write com.apple.dock "static-only" -bool "false"
 # Recent Applications visibility
 defaults write com.apple.dock "show-recents" -bool "true"
 
