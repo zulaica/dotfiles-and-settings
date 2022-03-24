@@ -31,7 +31,7 @@ defaults write com.apple.dock "persistent-apps" -array
 # Inactive Applications visibility
 defaults write com.apple.dock "static-only" -bool "false"
 # Recent Applications visibility
-defaults write com.apple.dock "show-recents" -bool "true"
+defaults write com.apple.dock "show-recents" -bool "false"
 
 ################################################################################
 # Finder                                                                       #
