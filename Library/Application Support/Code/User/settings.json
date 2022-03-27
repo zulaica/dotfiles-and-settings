@@ -1,6 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.bracketPairColorization.enabled": true,
+  "explorer.confirmDelete": false,
   "editor.cursorStyle": "line",
   "editor.fontFamily": "'Dank Mono'",
   "editor.fontLigatures": true,
