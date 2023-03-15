@@ -124,6 +124,17 @@ load-nvmrc
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
+###
+# Homebrew
+###
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
 export VOLTA_HOME="$HOME/.volta"
