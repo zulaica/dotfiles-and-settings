@@ -16,6 +16,7 @@
     120
   ],
   "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
   "eslint.run": "onSave",
   "explorer.confirmDragAndDrop": false,
@@ -29,9 +30,7 @@
   "terminal.integrated.lineHeight": 1.5,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
-  "window.nativeTabs": true,
-  "window.title": "${dirty} ❯ 📂  ${folderPath}${separator}${activeEditorShort}",
-  "window.titleSeparator": " ❯ 📄 ",
+  "window.commandCenter": true,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "New Moon",
   "workbench.editor.highlightModifiedTabs": true,
@@ -42,6 +41,7 @@
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "always",
+  "vsicons.dontShowNewVersionMessage": true,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
