@@ -104,6 +104,8 @@ then
   compinit
 fi
 
+export HOMEBREW_NO_ENV_HINTS=1
+
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
 export VOLTA_HOME="$HOME/.volta"
