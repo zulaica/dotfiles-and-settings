@@ -8,14 +8,12 @@
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
-  "editor.lineHeight": 1.825,
+  "editor.lineHeight": 2,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
@@ -28,7 +26,8 @@
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontWeightBold": "bold",
-  "terminal.integrated.lineHeight": 1.75,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.lineHeight": 2,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "window.commandCenter": false,
@@ -43,5 +42,5 @@
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "always",
-  "vsicons.dontShowNewVersionMessage": true,
+  "vsicons.dontShowNewVersionMessage": true
 }
