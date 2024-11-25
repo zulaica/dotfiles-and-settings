@@ -103,6 +103,17 @@ defaults write com.apple.dock "wvous-bl-modifier" -int 0
 defaults write com.apple.dock "wvous-br-corner" -int 0
 defaults write com.apple.dock "wvous-br-modifier" -int 0
 
+################################################################################
+# Screenshots                                                                  #
+################################################################################
+echo "🧑‍💻 Updating Screenshots"
+# Location
+defaults write com.apple.screencapture location -string "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Unclutter Files/Screenshots"
+# File Format
+defaults write com.apple.screencapture type -string "png"
+# Disable drop shadow
+defaults write com.apple.screencapture disable-shadow -bool true
+
 # Clear cached credentials
 sudo -k
 
