@@ -7,10 +7,8 @@
 # https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 ################################################################################
 
-# Get the current terminal emulator name
-name=$(lsappinfo info -only name $(ps -o ppid= -p $PPID) | cut -d '"' -f4)
 # Request the user's credentials
-sudo -v -p "🙋 Enter your password to allow $name to update your preferences: "
+sudo -v -p "🙋 Enter your password to update your preferences: "
 
 ################################################################################
 # Dock                                                                         #
