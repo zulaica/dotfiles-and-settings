@@ -1,13 +1,13 @@
 {
+  "css.format.spaceAroundSelectorSeparator": true,
   "editor.bracketPairColorization.enabled": true,
-  "explorer.confirmDelete": false,
   "editor.cursorStyle": "line",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Dank Mono'",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
+  "editor.letterSpacing": 0.5,
   "editor.lineHeight": 2,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
@@ -18,8 +18,17 @@
   "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
   "eslint.run": "onSave",
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.insertFinalNewline": true,
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.statusBarItem.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
   "html.suggest.html5": true,
   "telemetry.telemetryLevel": "error",
   "terminal.integrated.drawBoldTextInBrightColors": false,
@@ -30,6 +39,7 @@
   "terminal.integrated.lineHeight": 2,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
+  "vsicons.dontShowNewVersionMessage": true,
   "window.commandCenter": false,
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Panda Syntax",
@@ -42,5 +52,4 @@
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
   "workbench.tree.renderIndentGuides": "always",
-  "vsicons.dontShowNewVersionMessage": true
 }
