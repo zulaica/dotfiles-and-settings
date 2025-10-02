@@ -10,3 +10,5 @@
 !~/Library/Application\ Support/Code/User/settings.json
 !.zshrc
 !.macos_preferences
+!~/Library/Application\ Support/com.mitchellh.ghostty/config
+!~/.config/ghostty/themes/Panda\ Syntax
