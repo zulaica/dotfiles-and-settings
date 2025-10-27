@@ -1,3 +1,16 @@
+################################################################################
+# Aliases
+################################################################################
+alias list='ls -ahlvFGO'
+
+################################################################################
+# Custom Prompt
+#
+# Output:
+# 📁 DIRECTORY 🌱 git-branch                                             DATE 🗓️
+# ❯                                                                      TIME 🕒
+################################################################################
+
 ###
 # Update clear-screen to include precmd
 ###
@@ -5,24 +18,11 @@ clear-screen() { echoti clear; precmd; zle redisplay; }
 zle -N clear-screen
 
 ###
-# Aliases
-###
-alias list='ls -ahlvFGO'
-
-###
-# Custom Prompt
-#
-# Output:
-# 📁 DIRECTORY 🌱 git-branch                                             DATE 🗓️
-# ❯                                                                      TIME 🕒
-###
-
-###
 # Formatted strings
 ###
-DIRECTORY="%F{4}📁 %(3~|…/%2~|%~)%f"
-DATE="%F{6}%D{%A %Y/%m/%d} 🗓️%f"
-TIME="%F{6}%T%f 🕒%f"
+DIRECTORY="%F{6}📁 %(3~|…/%2~|%~)%f"
+DATE="%F{4}%D{%A %Y/%m/%d} 🗓️%f"
+TIME="%F{4}%T%f 🕒%f"
 
 ###
 # Functions
@@ -89,26 +89,27 @@ ZLE_RPROMPT_INDENT=0
 export PROMPT='%F{7}❯%f '
 export RPROMPT=${TIME}
 
-###
+################################################################################
 # Autocomplete
-###
-autoload -Uz compinit
-compinit
+################################################################################
+autoload -Uz compinit && compinit
 
-###
+################################################################################
 # GPG
-###
+################################################################################
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
-###
+################################################################################
 # Homebrew
-###
+################################################################################
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 fi
 export HOMEBREW_NO_ENV_HINTS=1
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
